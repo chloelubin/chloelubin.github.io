@@ -18,7 +18,7 @@ export default function Hero() {
           </span>
         </h1>
         <p className="text-xl sm:text-2xl text-gray-300 mb-8 animate-fade-in">
-          Scaling go-to-market teams by unlocking faster analytics insights with AI.
+          Scaling go-to-market teams by unlocking faster insights with AI.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
           <button
