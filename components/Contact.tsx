@@ -13,14 +13,34 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Here you would typically send the form data to a backend
-    // For now, we'll just simulate a submission
-    setTimeout(() => {
-      alert('Thank you for your message! I\'ll get back to you soon.')
-      setFormData({ name: '', email: '', message: '' })
-      setIsSubmitting(false)
-    }, 1000)
+
+    const recipientEmail = 'chloe.lubin@gmail.com'
+
+    const subject = `New message from ${formData.name || 'Portfolio Contact Form'}`
+    const bodyLines = [
+      'You received a new message from your portfolio contact form:',
+      '',
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      '',
+      'Message:',
+      formData.message,
+      '',
+      '---',
+      'Sent from your portfolio site',
+    ]
+
+    const mailtoLink = `mailto:${encodeURIComponent(
+      recipientEmail
+    )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      bodyLines.join('\n')
+    )}`
+
+    window.location.href = mailtoLink
+
+    // Reset form state after opening mail client
+    setFormData({ name: '', email: '', message: '' })
+    setIsSubmitting(false)
   }
 
   const handleChange = (
