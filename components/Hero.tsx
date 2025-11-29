@@ -11,8 +11,11 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(29,185,84,0.1),transparent_50%)]" />
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
-          <span className="text-gradient">Hey, I'm Chloe. Welcome to my website!</span>
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-3 animate-fade-in">
+          <span className="text-gradient block">Hey, I&apos;m Chloé.</span>
+          <span className="block text-2xl sm:text-3xl lg:text-4xl text-gray-200 mt-2">
+            Welcome to my website!
+          </span>
         </h1>
         <p className="text-xl sm:text-2xl text-gray-300 mb-8 animate-fade-in">
           Scaling go-to-market teams by unlocking faster analytics insights with AI.
