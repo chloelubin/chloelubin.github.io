@@ -53,10 +53,9 @@ export default function Contact() {
   }
 
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com', icon: '💻' },
-    { name: 'LinkedIn', url: 'https://linkedin.com', icon: '💼' },
-    { name: 'Twitter', url: 'https://twitter.com', icon: '🐦' },
-    { name: 'Email', url: 'mailto:hello@example.com', icon: '✉️' },
+    { name: 'GitHub', url: 'https://github.com/chloelubin', icon: '💻' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/chloe-lubin/', icon: '💼' },
+    { name: 'Email', url: 'mailto:chloe.lubin@gmail.com', icon: '✉️' },
   ]
 
   return (
